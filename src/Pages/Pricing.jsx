@@ -117,25 +117,18 @@ sessions – these are just a few of the things that will help you
 relax and enjoy your holiday.
 </p>
 
-<button className="btn learn-btn">LEARN MORE</button>
-
+<button className="btn learn-btn border-white text-white" >LEARN MORE</button>
 </div>
-
-
-
 <div className="col-md-6 text-md-end text-center price-box">
-
 <span className="from">FROM</span>
 <span className="price">$420</span>
-
 </div>
-
 </div>
-
 </div>
 </section>
 
-{/* thede page  */}
+{/* three page  */}
+
 
 <section className="change-section">
 <div className="container">
@@ -149,8 +142,7 @@ Explore the tropical nature, hop on a scooter to drive around the island or choo
 <button className="btn learn-btn">LEARN MORE</button>
 <div className="col-md-6 text-md-end text-center price-box">
 
-<span className="city">FROM</span>
-<span className="number">$569</span>
+
 
 </div>
 </div>
