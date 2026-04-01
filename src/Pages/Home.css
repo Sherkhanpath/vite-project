@@ -1,0 +1,403 @@
+
+
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?auto=format&fit=crop&w=1920&q=80");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Important for mobile */
+  background-attachment: scroll;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 5%;
+  color: #fff;
+}
+.hero-text-block {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.hero-text-block.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.time-to {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.visit-bali {
+  font-size: clamp(40px, 8vw, 85px);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+.hero-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+
+.offers-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.offers-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* --- SECTION 2: CATEGORIES STYLING --- */
+/* Vertical Images ke liye HD URLs yahan hain */
+.img-1 {
+  /* A PLACE TO BE wali image */
+  background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80");
+}
+
+.img-2 {
+  /* IN LOVE WITH BALI wali image */
+  background-image: url("https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80");
+}
+
+/* Common Styles for Vertical Boxes */
+.img-vertical {
+  width: 100%;
+  max-width: 450px;
+  height: 550px; /* Isse image show hogi */
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/* Background Colors from your images */
+.bali-split-light {
+  background-color: #cbd3cb; /* Light sage green */
+  color: #4a5d4a;
+}
+
+.bali-split-dark {
+  background-color: #465343; /* Dark forest green */
+}
+
+/* Typography */
+.split-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.split-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn-pill {
+  background: transparent;
+  border: 1px solid #4a5d4a;
+  border-radius: 50px;
+  padding: 10px 35px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-pill:hover {
+  background: #4a5d4a;
+  color: #fff;
+}
+
+.white-border {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.white-border:hover {
+  background: #fff !important;
+  color: #465343 !important;
+}
+/* Teeno images ko ek hi size ka banane ke liye */
+.custom-img {
+  width: 100%;           /* Column ki poori width lega */
+  height: 300px;         /* Aap height apni pasand se set kar sakte hain (e.g., 300px ya 350px) */
+  object-fit: cover;     /* Isse image stretch nahi hogi, balki box mein perfect fit ho jayegi */
+  display: block;
+  border-radius: 4px;    /* Optional: corners ko thoda round karne ke liye */
+}
+
+/* Container jisme image hai use bhi secure karein */
+.img-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Jab tak load ho halka grey dikhega */
+}
+/* Color Palette */
+:root {
+    --dark-green: #3e4a3d;
+    --light-grey: #e1e6e2;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+      background:#4f5a48;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+/* Testimonial Styling */
+.testimonial-section {
+    background-color: var(--dark-green);
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.author {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Instagram Section Styling */
+.instagram-section {
+      background:#4f5a48;
+    background-color: var(--light-grey);
+    padding: 80px 0;
+}
+
+.section-title-dark {
+    color: var(--dark-green);
+    font-size: 1.5rem;
+      background:#4f5a48;
+}
+
+
+/* Custom Button */
+.btn-outline-dark {
+    border-color: var(--dark-green);
+    color: var(--dark-green);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+.instagram-section{
+  background:#e9eeea;
+  padding:80px 0;
+  text-align:center;
+}
+
+.insta-title{
+  font-size:40px;
+  letter-spacing:3px;
+  color:#3b4b44;
+  margin-bottom:60px;
+  font-family: serif;
+}
+
+.insta-img-wrapper{
+  height:300px;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.insta-img-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:8px;
+  transition:0.4s;
+}
+
+.insta-img-wrapper img:hover{
+  transform:scale(1.05);
+}
+.subscribe-section{
+  background:#4c5a46;
+  padding:80px 0;
+  color:white;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+}
+.subscribe-section {
+  background: #4c5a46;
+  padding: 80px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.subscribe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left Side */
+.subscribe-text {
+  flex: 1;
+}
+
+.subscribe-text h2 {
+  font-size: 60px;
+  font-family: serif;
+  margin-bottom: 20px;
+}
+
+.subscribe-text p {
+  font-size: 0.95rem;
+  max-width: 400px;
+  line-height: 1.6;
+  color: #e5e5e5;
+}
+
+/* Right Side */
+.subscribe-form {
+  flex: 1;
+  width: 100%;
+}
+
+.subscribe-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #d3d6d2;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.subscribe-form button {
+  padding: 12px 35px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+  background: white;
+  color: #4c5a46;
+}
+
+/* ✅ Tablet */
+@media (max-width: 992px) {
+  .subscribe-text h2 {
+    font-size: 40px;
+  }
+
+  .subscribe-content {
+    gap: 25px;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .subscribe-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-text p {
+    margin: auto;
+  }
+
+  .subscribe-form {
+    width: 100%;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+  }
+}
+
+/* ✅ Small Mobile */
+@media (max-width: 480px) {
+  .subscribe-section {
+    padding: 50px 15px;
+  }
+
+  .subscribe-text h2 {
+    font-size: 28px;
+  }
+
+  .subscribe-text p {
+    font-size: 0.85rem;
+  }
+
+  .subscribe-form input {
+    padding: 12px;
+  }
+
+  .subscribe-form button {
+    padding: 10px;
+  }
+}

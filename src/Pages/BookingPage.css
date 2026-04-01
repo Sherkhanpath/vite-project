@@ -1,0 +1,115 @@
+/* --- GLOBAL STYLES --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- HERO SECTION (With Starting Animation) --- */
+.booking-hero {
+  height: 100vh;
+  /* Bali Beach View */
+  background-image: url("https://images.unsplash.com/photo-1721353314275-611072b1617a?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhbGklMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D"); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.visit-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* Dark overlay for text clarity */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.2s ease-out;
+}
+
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visit-title {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+.visit-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* main button */
+.circle-btn {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* text */
+.circle-btn span {
+  z-index: 3;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* multiple ripple waves */
+.circle-btn::before,
+.circle-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  animation: wave 2.5s linear infinite;
+}
+
+/* second wave delay */
+.circle-btn::after {
+  animation-delay: 1.2s;
+}
+
+/* animation */
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+/* wrapper ko absolute center kar do */
+.circle-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}

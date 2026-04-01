@@ -1,0 +1,77 @@
+/* Background */
+.booking-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://images.unsplash.com/photo-1717459254820-64fd9be3fb19?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFsaSUyMGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D") 
+  no-repeat center/cover;
+}
+
+/* Glass Card */
+.booking-card {
+  width: 580px;
+  padding: 30px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow: 0 30px 30px rgba(0,0,0,0.25);
+
+  text-align: center;
+  color: white;
+}
+
+/* Heading */
+.booking-card h2 {
+  margin-bottom: 15px;
+}
+
+/* Sub text */
+.sub-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Fields */
+.field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Inputs */
+.p-inputtext,
+.p-calendar {
+  width: 100%;
+  
+}
+
+/* Input */
+.p-inputtext {
+  padding: 10px;
+  border-radius: 6px !important;
+  border: none;
+}
+
+/* Error */
+.error {
+  color: #ff4d4d;
+  font-size: 12px;
+}
+
+/* Button */
+.p-button {
+  width: 100%;
+  border-radius: 6px !important;
+  background: black;
+  border: none;
+}
+
+.p-button:hover {
+  background: #333;
+}

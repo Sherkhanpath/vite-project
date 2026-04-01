@@ -1,0 +1,33 @@
+.lion-banner {
+  height: 90vh;
+  /* Niche wala URL copy karke pura replace kar do */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://assets.zyrosite.com/poveda6u7yb/culture_bali-YleZ14DJrKcP6zXR.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.hero-text-box {
+  padding-left: 20px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  font-family: 'Serif', Georgia, serif;
+}
+
+.main-heading {
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  margin-top: -10px;
+  font-family: 'Serif', Georgia, serif;
+}
+.error-msg{
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

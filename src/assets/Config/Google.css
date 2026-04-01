@@ -1,0 +1,33 @@
+/* unwanted Google UI hide */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 0px !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* 🔥 MAIN: dropdown ko button bana */
+.goog-te-combo {
+  font-size: 14px !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+/* hover effect */
+.goog-te-combo:hover {
+  background: #0056b3;
+}

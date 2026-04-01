@@ -1,0 +1,293 @@
+.pricing-hero{
+  height:100vh;
+  background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.pricing-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+.pricing-section{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:white;
+}
+
+.pricing-text{
+  opacity:0;
+  transform:translateY(60px);
+  transition:all 1s ease;
+}
+
+.pricing-text.pricing-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.pricing-subtitle{
+  font-size:28px;
+  letter-spacing:4px;
+  margin-bottom:10px;
+}
+
+.pricing-title{
+  font-size:80px;
+  font-weight:600;
+  font-family:serif;
+  margin-bottom:20px;
+}
+
+.pricing-desc{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+.pricing-btn{
+  display:inline-block;
+  padding:12px 35px;
+  border:2px solid white;
+  color:white;
+  text-decoration:none;
+  border-radius:40px;
+  letter-spacing:2px;
+  transition:0.4s;
+}
+
+.pricing-btn:hover{
+  background:white;
+  color:black;
+}
+
+.pricing-hero.pricing-scroll{
+  filter:brightness(0.9);
+}
+/* secoud page  */
+.offer-section{
+background:#e6e8e5;
+padding:100px 20px;
+}
+
+.offer-title{
+font-size:48px;
+letter-spacing:3px;
+margin-bottom:20px;
+color:#4a4f45;
+}
+
+.offer-text{
+max-width:650px;
+margin:auto;
+color:#666;
+line-height:1.7;
+}
+
+
+/* RELAX SECTION */
+
+.relax-section{
+background:#5c6854;
+color:white;
+padding:90px 20px;
+}
+
+.relax-title{
+font-size:40px;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.relax-text{
+max-width:420px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.learn-btn{
+border:2px solid white;
+color:white;
+padding:10px 25px;
+border-radius:30px;
+background:transparent;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.learn-btn:hover{
+background:white;
+color:#5c6854;
+}
+
+
+/* PRICE */
+
+.price-box{
+font-family: serif;
+}
+
+.from{
+font-size:20px;
+margin-right:10px;
+letter-spacing:2px;
+}
+
+.price{
+font-size:90px;
+font-weight:300;
+}
+.btn-sher{
+  border:2px solid #5c6854;
+color:#5c6854;
+padding:10px 25px;
+border-radius:30px;
+background:transparent;
+font-size:14px;
+letter-spacing:2px;
+margin-left: -60%;
+}
+
+.btn-sher:hover{
+background:white;
+color:#5c6854;
+}
+
+/* Adventure  */
+.change-section{
+background:#f4f9f1;
+color:#666;
+padding:50px 20px;
+}
+
+.change-title{
+font-size:40px;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.relax-text{
+max-width:420px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.learn-btn{
+border:2px solid #666;;
+color:#666;
+padding:10px 25px;
+border-radius:30px;
+background:transparent;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.learn-btn:hover{
+background:white;
+color:#5c6854;
+}
+.price-box{
+font-family: serif;
+}
+
+.city{
+font-size:20px;
+margin-right:10px;
+letter-spacing:2px;
+margin-left: 100px;
+}
+
+.number{
+font-size:90px;
+font-weight:300;
+margin-left: 150%;
+}
+.btn-sher{
+  border:2px solid #5c6854;
+color:#5c6854;
+padding:10px 25px;
+border-radius:30px;
+background:transparent;
+font-size:14px;
+letter-spacing:2px;
+margin-left: -60%;
+}
+
+.btn-sher:hover{
+background:white;
+color:#5c6854;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+background:linear-gradient(90deg,#23311f,#2e3c28);
+}
+
+.contact-title{
+font-size:42px;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.contact-text{
+max-width:420px;
+line-height:1.7;
+font-size:14px;
+}
+
+/* FORM */
+
+.form-control{
+background:#cfd3cd;
+border:2px solid #ff4d6d;
+border-radius:0;
+}
+
+.error{
+color:#ff4d6d;
+font-size:12px;
+}
+
+.submit-btn{
+border:2px solid white;
+color:white;
+padding:6px 25px;
+border-radius:20px;
+background:transparent;
+font-size:12px;
+letter-spacing:2px;
+}
+
+.submit-btn:hover{
+background:white;
+color:#23311f;
+}
+
+.lion-section{
+background:#e6e8e5;
+padding:80px 20px;
+}
+
+.lion-title{
+font-size:48px;
+letter-spacing:3px;
+margin-bottom:20px;
+color:#4a4f45;
+}
+
+.lion-text{
+max-width:650px;
+margin:auto;
+color:#666;
+line-height:1.7;
+}

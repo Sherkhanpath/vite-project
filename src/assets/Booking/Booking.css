@@ -1,0 +1,23 @@
+.lion-banner {
+  height: 90vh;
+  /* Niche wala URL copy karke pura replace kar do */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://media.istockphoto.com/id/155908966/photo/young-indian-man-unlocking-his-hotel-room.webp?a=1&b=1&s=612x612&w=0&k=20&c=pEJhqI7Ih4UbiluL2C-PHH94DwjkskHjOz2kdvnR-6o=') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.hero-text-box {
+  padding-left: 20px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  font-family: 'Serif', Georgia, serif;
+}
+.checkkbox{
+  margin-top: 20px;
+}

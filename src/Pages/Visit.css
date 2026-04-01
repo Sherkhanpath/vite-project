@@ -1,0 +1,151 @@
+/* --- GLOBAL STYLES --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- HERO SECTION (With Starting Animation) --- */
+.visit-hero {
+  height: 100vh;
+  /* Bali Beach View */
+  background-image: url("https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2000&auto=format&fit=crop"); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.visit-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* Dark overlay for text clarity */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.2s ease-out;
+}
+
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visit-title {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+.visit-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* --- COMMON SECTION STYLING --- */
+.visit-section {
+  padding: 100px 0;
+  transition: background-color 0.5s ease;
+}
+
+.section-label {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  font-family: serif;
+}
+
+.section-desc {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+/* --- DYNAMIC IMAGES (Using Background URL) --- */
+
+.adventure-img {
+  background-image: url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2");
+}
+
+.culture-img {
+  background-image: url("https://images.unsplash.com/photo-1518548419970-286c1f58ad3d?q=80&w=1000&auto=format&fit=crop");
+}
+
+.relax-img {
+  background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1000&auto=format&fit=crop");
+}
+
+/* Image Container Shared Styles */
+.adventure-img, .culture-img, .relax-img {
+  width: 100%;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.adventure-img:hover, .culture-img:hover, .relax-img:hover {
+  transform: scale(1.04);
+}
+
+/* --- BUTTON STYLING --- */
+.visit-btn {
+  background: transparent;
+  padding: 14px 40px;
+  border: 2px solid;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.visit-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  letter-spacing: 4px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 992px) {
+  .section-label {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .visit-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .adventure-img, .culture-img, .relax-img {
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .visit-title {
+    font-size: 3rem;
+  }
+
+  .section-desc {
+    max-width: 100% !important;
+  }
+}
