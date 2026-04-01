@@ -10,7 +10,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React,{Suspense,lazy} from "react";
 // import Navbar from "../src/components/Navbar";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 // import { motion } from "framer-motion";
 
 const Home = lazy(() => import("./Pages/Home"));
@@ -134,7 +134,7 @@ function App() {
   />
 
 </Routes>     
-      {/* <Footer /> */}
+      <Footer />
      </Suspense>
     </BrowserRouter>
     

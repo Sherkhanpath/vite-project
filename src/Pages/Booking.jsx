@@ -68,7 +68,7 @@ const Booking = () => {
       <div className="booking-card">
 
         {/* Heading */}
-        <h2>Hotel Reservation Form</h2>
+        <h2> CARI SURF CAMP</h2>
         <p className="sub-text">
           Please complete the form below.
         </p>

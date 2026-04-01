@@ -2,11 +2,13 @@ import React, { useState ,useRef } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // ⚠️ important
 import "primeicons/primeicons.css";
-import "./Booking.css"
+import "./Booking.css";
+import "../../Pages/Booking"
 
 
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
+import Booking from '../../Pages/Booking';
 
 function BookingNow() {
 
@@ -20,6 +22,7 @@ function BookingNow() {
           detail:'Message Content', 
           life: 3000});
     }
+    // jgjgj//
 
   return (
 
@@ -135,7 +138,12 @@ function BookingNow() {
         </div>
       </section>
 
-      <div style={{ height: "100px" }}></div>
+      {/* <div style={{ height: "100px" }}></div> */}
+
+<div className="col-md-12">
+  <Booking/>
+</div>
+
     </>
   )
 }
