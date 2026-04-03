@@ -26,72 +26,72 @@ function BookingNow() {
 
   return (
 
-    <>
-      {/* NAVBAR */}
+<>
+{/* NAVBAR */}
 
-      <Toast ref={toast} />
-      <nav
-       
-       
-    
-        className="d-flex justify-content-between align-items-center px-4"
-        style={{
-          backgroundColor: "#B4613F",
-          height: "80px",
-        }}
+<Toast ref={toast} />
+<nav
+  
+  
+
+  className="d-flex justify-content-between align-items-center px-4"
+  style={{
+    backgroundColor: "#B4613F",
+    height: "80px",
+  }}
+>
+  {/* Left */}
+  <div className="d-flex align-items-center gap-3">
+    <img
+      src='https://h-img1.cloudbeds.com/uploads/295292/dsc02624_gallery~~6982ec755a084.jpg'
+      alt="logo"
+      style={{
+        width: "60px",
+        height: "60px",
+        borderRadius: "12px",
+        objectFit: "cover"
+      }}
+    />
+
+    <h4 className="text-white m-0 fw-bold">
+      CARI Surf Camp
+    </h4>
+  </div>
+  
+  {/* Right */}
+  <div className="d-flex align-items-center gap-3 text-white">
+
+    {/* 🌍 Dropdown */}
+    <div className="dropdown">
+      <button
+        className="btn text-white dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        style={{ background: "transparent", border: "none" }}
       >
-        {/* Left */}
-        <div className="d-flex align-items-center gap-3">
-          <img
-            src='https://h-img1.cloudbeds.com/uploads/295292/dsc02624_gallery~~6982ec755a084.jpg'
-            alt="logo"
-            style={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "12px",
-              objectFit: "cover"
-            }}
-          />
+        🌍 {lang}
+      </button>
 
-          <h4 className="text-white m-0 fw-bold">
-            CARI Surf Camp
-          </h4>
-        </div>
+      <ul className="dropdown-menu">
+        <li>
+          <button className="dropdown-item" onClick={() => setLang("EN")}>
+            English
+          </button>
+        </li>
+        <li>
+          <button className="dropdown-item" onClick={() => setLang("HI")}>
+            Hindi
+          </button>
+        </li>
+        <li>
+          <button className="dropdown-item" onClick={() => setLang("FR")}>
+            French
+          </button>
+        </li>
+      </ul>
+    </div>
 
-        {/* Right */}
-        <div className="d-flex align-items-center gap-3 text-white">
-
-          {/* 🌍 Dropdown */}
-          <div className="dropdown">
-            <button
-              className="btn text-white dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              style={{ background: "transparent", border: "none" }}
-            >
-              🌍 {lang}
-            </button>
-
-            <ul className="dropdown-menu">
-              <li>
-                <button className="dropdown-item" onClick={() => setLang("EN")}>
-                  English
-                </button>
-              </li>
-              <li>
-                <button className="dropdown-item" onClick={() => setLang("HI")}>
-                  Hindi
-                </button>
-              </li>
-              <li>
-                <button className="dropdown-item" onClick={() => setLang("FR")}>
-                  French
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <span className="fw-semibold">EUR</span>
+    <span className="fw-semibold">EUR</span>
         </div>
       </nav>
 
