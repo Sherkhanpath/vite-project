@@ -139,8 +139,9 @@ function App() {
     </BrowserRouter>
 
     <h2> sherkhanpathan</h2>
-    
-    
+    <h2> khan</h2>
+    <h2> pathan</h2>
+  
     </>
   );
 }
