@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // ⚠️ important
 import "primeicons/primeicons.css";
 import "./Booking.css";
-import "../../Pages/Booking"
+import "../../Pages/BookingForm"
 
 
 // import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
-import Booking from '../../Pages/Booking';
+import Booking from '../../Pages/BookingForm';
 
 function BookingNow() {
 
