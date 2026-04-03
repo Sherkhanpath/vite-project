@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ScrollTop } from 'primereact/scrolltop';
 import "./BookingPage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./Booking"
-import Booking from "./Booking";
+// import BookingForm from "../assets/Booking/BookingForm";
 
 function useIsVisible(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -38,7 +37,7 @@ function BookingPage() {
     <div>
         <div
         className="booking-hero"
-        style={{ backgroundPositionY: `calc(50% + ${parallaxOffset}px)` }}
+        style={{ backgroundPositionY: `calc(50% + ${parallaxOffset}px)`}}
       >
         <div
           ref={heroRef}
@@ -49,18 +48,17 @@ function BookingPage() {
 
   <div className="circle-wrapper">
   <div className="circle-btn" onClick={() => navigate("/bookingnow")}>
-    {/* <span>BOOK NOW</span> */}
   </div>
 </div>
 
         </div>
       </div>
       
-
-      {/* section 2 */}
-      {/* <div className="col-md-12">
-  <Booking/>
-</div> */}
+ 
+   {/* section 2  */}
+           {/* <div className="col-md-12">
+      <BookingForm/>
+    </div>   */}
    {/* section 3  */}
       <section className="offer-section text-center">
 <div className="container">
@@ -85,13 +83,12 @@ function BookingPage() {
       </p>
     </div>
   </section>
-
-  
-
  <ScrollTop />
 </div>
     </>
-  )
+  );
 }
+
+
 
 export default BookingPage

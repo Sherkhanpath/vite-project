@@ -2,13 +2,13 @@ import React, { useState ,useRef } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // ⚠️ important
 import "primeicons/primeicons.css";
-import "./Booking.css";
-import "../../Pages/BookingForm"
-
+import "./BookingNow.css";
+import BookingForm from './BookingForm';
 
 // import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
-import Booking from '../../Pages/BookingForm';
+
+
 
 function BookingNow() {
 
@@ -22,16 +22,11 @@ function BookingNow() {
           detail:'Message Content', 
           life: 3000});
     }
-  
   return (
-
 <>
 {/* NAVBAR */}
-
 <Toast ref={toast} />
 <nav
-  
-  
 
   className="d-flex justify-content-between align-items-center px-4"
   style={{
@@ -94,54 +89,50 @@ function BookingNow() {
         </div>
       </nav>
 
-      {/* BANNER */}
-      <section className="lion-banner position-relative">
-        <div className="container h-100">
-          <div className="row h-100 align-items-center"></div>
-        </div>
+    <section className="booking-hero d-flex align-items-center justify-content-center">
 
-        {/* FORM */}
-        <div
-          className="position-absolute start-50 translate-middle-x bg-white shadow p-4 rounded d-flex gap-4"
-          style={{
-            bottom: "30px",
-            zIndex: 10
-          }}
+  <div className="booking-form bg-white shadow p-4 rounded">
+    
+    <div className="d-flex flex-column flex-md-row gap-3">
+
+      <div>
+        <label className="fw-bold">Check in</label>
+        <input type="date" className="form-control" />
+      </div>
+
+      <div>
+        <label className="fw-bold">Check out</label>
+        <input type="date" className="form-control" />
+      </div>
+
+      <div>
+        <label className="fw-bold">Guests</label>
+        <select className="form-control">
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+        </select>
+      </div>
+
+      <div className="d-flex align-items-end">
+        <button 
+          className="btn btn-dark px-4"
+          onClick={showSuccess}
         >
-          <div>
-            <label className="fw-bold">Check in</label>
-            <input type="date" className="form-control" />
-          </div>
+          Check Availability
+        </button>
+      </div>
 
-          <div>
-            <label className="fw-bold">Check out</label>
-            <input type="date" className="form-control" />
-          </div>
+    </div>
 
-          <div>
-            <label className="fw-bold">Guests</label>
-            <select className="form-control">
-              <option>1 Guest</option>
-              <option>2 Guests</option>
-              <option>3 Guests</option>
-            </select>
-          </div>
+  </div>
 
-          <div className="d-flex align-items-end" 
-         >
-            <button className="btn btn-dark px-4"  label="Success"
-          severity = "success" onClick={showSuccess}>
-              Check Availability
-            </button>
-          </div>
-        </div>
-      </section>
+</section>
 
-      {/* <div style={{ height: "100px" }}></div> */}
+  <div className="col-md-12">
+    <BookingForm/>
+  </div>
 
-<div className="col-md-12">
-  <Booking/>
-</div>
 
     </>
   )

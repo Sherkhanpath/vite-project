@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useFormik } from "formik";
-import { bookingSchema } from "./Validation";
+import { bookingSchema } from "../../Pages/Validation";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // PrimeReact
@@ -17,7 +17,7 @@ import "primeicons/primeicons.css";
 
 import "./booking.css";
 
-const Booking = () => {
+const BookingForm = () => {
   const toast = useRef(null);
 
   const formik = useFormik({
@@ -311,4 +311,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default BookingForm;
