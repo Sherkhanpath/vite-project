@@ -15,7 +15,7 @@ import "primereact/resources/themes/lara-light-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
-import "./booking.css";
+import "./bookingForm.css";
 
 const BookingForm = () => {
   const toast = useRef(null);

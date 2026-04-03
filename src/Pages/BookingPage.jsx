@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ScrollTop } from 'primereact/scrolltop';
 import "./BookingPage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import BookingForm from "../assets/Booking/BookingForm";
+
 
 function useIsVisible(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -55,10 +55,7 @@ function BookingPage() {
       </div>
       
  
-   {/* section 2  */}
-           {/* <div className="col-md-12">
-      <BookingForm/>
-    </div>   */}
+ 
    {/* section 3  */}
       <section className="offer-section text-center">
 <div className="container">
