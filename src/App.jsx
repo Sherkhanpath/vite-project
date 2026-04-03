@@ -4,7 +4,7 @@ import "primeicons/primeicons.css";
 import "primeicons/primeicons.css";                              
 import "primeicons/primeicons.css";   
 import { ProgressSpinner } from 'primereact/progressspinner'; 
-import GoogleTranslate from "./assets/Config/GoogleTraslate";
+// import GoogleTranslate from "./assets/Config/GoogleTraslate";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,7 +42,7 @@ function App() {
   </div>
        
       }>
-          <GoogleTranslate/>
+          {/* <GoogleTranslate/> */}
     <Routes>
 
   {/* ✅ Navbar + Footer wale sab pages */}
