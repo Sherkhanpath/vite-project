@@ -6,7 +6,7 @@ import "./Booking.css";
 import "../../Pages/Booking"
 
 
-import { Button } from 'primereact/button';
+// import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 import Booking from '../../Pages/Booking';
 
@@ -22,8 +22,7 @@ function BookingNow() {
           detail:'Message Content', 
           life: 3000});
     }
-    // jgjgj//
-
+  
   return (
 
 <>
