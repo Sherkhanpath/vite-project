@@ -7,6 +7,7 @@ import BookingForm from './BookingForm';
 
 // import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
+import Property from './Property';
 
 
 
@@ -132,6 +133,11 @@ function BookingNow() {
   <div className="col-md-12">
     <BookingForm/>
   </div>
+  {/* new section */}
+   <div className="col-md-12">
+    <Property/>
+  </div>
+
 
 
     </>
